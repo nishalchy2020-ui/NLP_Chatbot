@@ -4,7 +4,7 @@ import re
 
 generator = pipeline(
     "text-generation",
-    model="distilgpt2",   # smaller + cleaner than gpt2
+    model="TinyLlama/TinyLlama-1.1B-Chat-v1.0",   
     device=0 if torch.cuda.is_available() else -1
 )
 
