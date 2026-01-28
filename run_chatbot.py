@@ -3,7 +3,7 @@ from chatbot.sentiment import analyse_sentiment
 from chatbot.utils import is_exit, is_greeting
 
 def main():
-    print("AI Chatbot (GPT-based)")
+    print("🤖 AI Text Generation Chatbot")
     print("Type 'bye' or 'quit' to exit.\n")
 
     chat_history = ""
@@ -12,20 +12,21 @@ def main():
         user_input = input("You: ").strip()
 
         if is_exit(user_input):
-            print("Bot: Goodbye! Take care.")
+            print("Bot: Goodbye! 👋")
             break
+
+        if is_greeting(user_input):
+            print("Bot: Hello! 😊 How can I help you today?")
+            continue
 
         sentiment = analyse_sentiment(user_input)
 
-        if is_greeting(user_input):
-            print("Bot: Hello! How can I help you today?")
-            continue
-
-        # Add sentiment-aware prompt
         prompt = (
-            f"The user sounds {sentiment}. "
-            f"Respond in a friendly and helpful way.\n"
-            f"User: {user_input}\nBot:"
+            "You are an intelligent, friendly AI assistant. "
+            "Answer clearly, informatively, and politely.\n"
+            f"User sentiment: {sentiment}\n"
+            f"User: {user_input}\n"
+            "Bot:"
         )
 
         response = generate_response(prompt, chat_history)
