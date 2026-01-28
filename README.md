@@ -43,7 +43,7 @@ NLP_Chatbot/
 - Open anaconda prompt and open the project folder using 
 
 ```
-cd NLP_chatboot
+cd NLP_Chatbot
 
 ```
 - and then use the following commands
