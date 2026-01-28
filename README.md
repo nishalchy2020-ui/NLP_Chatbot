@@ -1,6 +1,6 @@
 # NLP_Chatbot: A Lightweight Sentiment-Aware AI Chatbot with GUI
 
-# AI Text Generation Chatbot
+## AI Text Generation Chatbot
 
 This project implements a conversational chatbot using AI-based text generation.
 The chatbot uses a GPT-style language model to generate human-like responses.
@@ -54,10 +54,13 @@ python run_chatbot.py
 ```
 
 
-# NLP Techniques Used
+## NLP Techniques Used
 - Regex
 - Keyword detection
 - Sentiment analysis
 
 ## Disclaimer
 This project is intended for educational and experimental purposes only. Generated responses may be inaccurate or misleading.
+
+## Screenshots
+![alt text](image.png)
